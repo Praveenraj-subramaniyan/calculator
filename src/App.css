@@ -35,3 +35,21 @@
 .equal{
   width: 100%;
 }
+@media (max-width : 550px) {
+  .equal{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    padding: 1%;
+
+  }
+  .calwin{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-right: 0%;
+    padding-left: 0%;
+    background-color: gainsboro;
+    border-radius: 20px;
+    width: 70%;
+  }
+}
