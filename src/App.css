@@ -45,7 +45,7 @@
   }
   .calwin{
     padding-top: 40%;
-    padding-bottom: 30%;
+    padding-bottom: 0%;
     padding-right: 0%;
     padding-left: 0%;
     background-color: gainsboro;
@@ -53,7 +53,7 @@
     width: 100%;
   }
   button{
-    margin: 10px;
+    margin: 15px;
     margin-left: 0px;
     width:auto;
   }
