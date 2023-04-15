@@ -34,7 +34,13 @@ function App() {
   }
   function isEqual(){
     try{
-      seValue(eval(value))
+      if(value === ""){
+        
+      }
+      else{
+        seValue(eval(value))
+      }
+      
     }
     catch{
       alert("Octal literals are not allowed")
