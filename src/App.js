@@ -50,7 +50,6 @@ function App() {
  
   return (
     <div className="container-fluid firstContainer">
-      <h1 id="title">Calculator</h1>
       <div className="container calwin">
         <div className="row inputdiv ">
           <div className="col-12">
