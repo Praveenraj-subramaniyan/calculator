@@ -21,7 +21,7 @@ function App() {
     const key = event.key;
     if(event.keyCode >= 48 && event.keyCode <= 57)
     {
-      setValue(value + `${key}`)
+      setValue(value + key)
     }
     else if(event.keyCode === 8)
     {
