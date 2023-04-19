@@ -32,13 +32,14 @@ function App() {
       alert("Only number are allowed")
     }
   }
-  function Equal(){
+  function equal(){
     try{
       if(value === ""){
-        
+        alert("Input box is empty")
       }
       else{
         seValue(eval(value))
+        return value;
       }
       
     }
@@ -121,7 +122,7 @@ function App() {
             <button className="btn"  id="00" value="00" onClick={() =>seValue(value + "00")}>00</button>
           </div>
           <div className="col-6">
-            <button className="btn btn-primary equal1"  id="equal" value="=" onClick={Equal}>=</button>
+            <button className="btn btn-primary equal1"  id="equal" value="=" onClick={equal}>=</button>
           </div>
         </div>
       </div>
