@@ -32,7 +32,7 @@ function App() {
       alert("Only number are allowed")
     }
   }
-  function isEqual(){
+  function Equal(){
     try{
       if(value === ""){
         
@@ -50,6 +50,7 @@ function App() {
  
   return (
     <div className="container-fluid firstContainer">
+      <p id="description">Basic calculator</p>
       <div className="container calwin">
         <div className="row inputdiv ">
           <div className="col-12">
@@ -61,38 +62,38 @@ function App() {
             <button className="btn c"  id="clear" value="c" onClick={onChange}>C</button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="clear" value="Backspace" onClick={onChange}><i className="fa-solid fa-arrow-left fa-sm"></i></button>
+            <button className="btn"  id="Backspace" value="Backspace" onClick={onChange}><i className="fa-solid fa-arrow-left fa-sm"></i></button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="clear" value="." onClick={() =>seValue(value + ".")}>.</button>
+            <button className="btn"  id="dot" value="." onClick={() =>seValue(value + ".")}>.</button>
           </div>
           <div className="col-3">
-            <button className="btn operators"  id="clear" value="*" onClick={() =>seValue(value + "*")}>X</button>
-          </div>
-        </div>
-        <div className="row buttondiv">
-          <div className="col-3">
-            <button className="btn" value={7}  id="clear" onClick={() =>seValue(value + "7")}>7</button>
-          </div>
-          <div className="col-3">
-            <button className="btn" value={8}  id="clear" onClick={() =>seValue(value + "8")}>8</button>
-          </div>
-          <div className="col-3">
-            <button className="btn"  id="clear" value={9} onClick={() =>seValue(value + "9")}>9</button>
-          </div>
-          <div className="col-3">
-            <button className="btn operators"  id="clear" value="/" onClick={() =>seValue(value + "/")}>/</button>
+            <button className="btn operators"  id="multiply" value="*" onClick={() =>seValue(value + "*")}>X</button>
           </div>
         </div>
         <div className="row buttondiv">
           <div className="col-3">
-            <button className="btn"  id="clear" value={4} onClick={() =>seValue(value + "4")}>4</button>
+            <button className="btn"   id="7" value="7" onClick={() =>seValue(value + "7")}>7</button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="clear" value={5} onClick={() =>seValue(value + "5")}>5</button>
+            <button className="btn"   id="8" value="8" onClick={() =>seValue(value + "8")}>8</button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="clear" value={6} onClick={() =>seValue(value + "6")}>6</button>
+            <button className="btn"  id="9" value="9"  onClick={() =>seValue(value + "9")}>9</button>
+          </div>
+          <div className="col-3">
+            <button className="btn operators"  id="divide" value="/" onClick={() =>seValue(value + "/")}>/</button>
+          </div>
+        </div>
+        <div className="row buttondiv">
+          <div className="col-3">
+            <button className="btn"  id="4" value="4" onClick={() =>seValue(value + "4")}>4</button>
+          </div>
+          <div className="col-3">
+            <button className="btn"  id="5" value="5" onClick={() =>seValue(value + "5")}>5</button>
+          </div>
+          <div className="col-3">
+            <button className="btn"  id="6" value="6" onClick={() =>seValue(value + "6")}>6</button>
           </div>
           <div className="col-3">
             <button className="btn operators"  id="subtract" value="-" onClick={() =>seValue(value + "-")}>-</button>
@@ -100,13 +101,13 @@ function App() {
         </div>
         <div className="row buttondiv">
           <div className="col-3">
-            <button className="btn"  id="clear" value={1} onClick={() =>seValue(value + "1")}>1</button>
+            <button className="btn"  value="1" id="1" onClick={() =>seValue(value + "1")}>1</button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="clear" value={2} onClick={() =>seValue(value + "2")}>2</button>
+            <button className="btn" value="2"  id="2"  onClick={() =>seValue(value + "2")}>2</button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="clear" value={3} onClick={() =>seValue(value + "3")}>3</button>
+            <button className="btn" value="3" id="3"  onClick={() =>seValue(value + "3")}>3</button>
           </div>
           <div className="col-3">
             <button className="btn operators"  id="add" value="+" onClick={() =>seValue(value + "+")}>+</button>
@@ -114,13 +115,13 @@ function App() {
         </div>
         <div className="row buttondiv">
           <div className="col-3">
-            <button className="btn"  id="clear" value={0} onClick={() =>seValue(value + "0")}>0</button>
+            <button className="btn"  id="0" value="0" onClick={() =>seValue(value + "0")}>0</button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="clear" value="00" onClick={() =>seValue(value + "00")}>00</button>
+            <button className="btn"  id="00" value="00" onClick={() =>seValue(value + "00")}>00</button>
           </div>
           <div className="col-6">
-            <button className="btn btn-primary equal"  id="equal" value="=" onClick={isEqual}>=</button>
+            <button className="btn btn-primary equal1"  id="equal" value="=" onClick={Equal}>=</button>
           </div>
         </div>
       </div>

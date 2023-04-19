@@ -32,11 +32,11 @@
 .operators{
   color: blue;
 }
-.equal{
+.equal1{
   width: 100%;
 }
 @media (max-width : 850px) {
-  .equal{
+  .equal1{
     width: 80px;
     height: 30px;
     text-align: center;
