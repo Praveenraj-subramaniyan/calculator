@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [value, seValue] = useState("");
-  function onChange(event)
+  function onClear(event)
   {
     const target = event.target;
     const targetvalue = target.value;
@@ -22,7 +22,6 @@ function App() {
     if(event.keyCode >= 48 && event.keyCode <= 57)
     {
       seValue(value + `${key}`)
-      console.log(`${key}`)
     }
     else if(event.keyCode === 8)
     {
@@ -33,6 +32,7 @@ function App() {
     }
   }
   function equal(){
+    console.log(value)
     try{
       if(value === ""){
         alert("Input box is empty")
@@ -59,10 +59,10 @@ function App() {
         </div>
         <div className="row buttondiv">
           <div className="col-3">
-            <button className="btn c"  id="clear" value="clear" onClick={onChange}>C</button>
+            <button className="btn c"  id="clear" value="clear" onClick={onClear}>C</button>
           </div>
           <div className="col-3">
-            <button className="btn"  id="Backspace" value="Backspace" onClick={onChange}><i className="fa-solid fa-arrow-left fa-sm"></i></button>
+            <button className="btn"  id="Backspace" value="Backspace" onClick={onClear}><i className="fa-solid fa-arrow-left fa-sm"></i></button>
           </div>
           <div className="col-3">
             <button className="btn"  id="dot" value="." onClick={() =>seValue(value + ".")}>.</button>
