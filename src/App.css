@@ -82,5 +82,7 @@
   }
 } */
 #title{
-  margin-left: 40%;
+  padding-left: 40%;
+  background-color: rgba(211, 191, 191, 0.178);
+  margin: 0px;
 }
