@@ -7,7 +7,7 @@ function App() {
   {
     const target = event.target;
     const targetvalue = target.value;
-     if(targetvalue ==="c"){
+     if(targetvalue ==="clear"){
       seValue("")
      }
      else if(targetvalue === "Backspace")
@@ -39,7 +39,6 @@ function App() {
       }
       else{
         seValue(eval(value))
-        return value;
       }
       
     }
@@ -60,7 +59,7 @@ function App() {
         </div>
         <div className="row buttondiv">
           <div className="col-3">
-            <button className="btn c"  id="clear" value="c" onClick={onChange}>C</button>
+            <button className="btn c"  id="clear" value="clear" onClick={onChange}>C</button>
           </div>
           <div className="col-3">
             <button className="btn"  id="Backspace" value="Backspace" onClick={onChange}><i className="fa-solid fa-arrow-left fa-sm"></i></button>
