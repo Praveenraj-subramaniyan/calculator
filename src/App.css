@@ -16,7 +16,7 @@
 }
 .firstContainer{
   background-color: rgba(211, 191, 191, 0.178);
-  padding: 5%;
+  padding: 1%;
 }
 .inputdiv{
   padding-left: 10%;
@@ -81,3 +81,6 @@
     width:auto;
   }
 } */
+#title{
+  margin-left: 40%;
+}
